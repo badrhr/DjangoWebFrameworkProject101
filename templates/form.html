@@ -1,0 +1,26 @@
+<body>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_div }}
+    <input type="submit" value="Add Article">
+</form>
+
+
+<input type="hidden" name="csrfmiddlewaretoken"
+       value="Ju2hNK4XKLOyrvbYmVmwm2n8rvt8dN4i9SfZVACjXWR3gpgVLCL5mNmAaTX5T1NO">
+<div>
+    <label for="id_titre">Titre:</label>
+    <input type="text" name="titre" maxlength="150" required="" id="id_titre">
+</div>
+
+<div>
+    <label for="id_description">Description:</label>
+    <textarea name="description" cols="40" rows="10" required="" id="id_description"></textarea>
+</div>
+<input type="submit" value="Add Article">
+
+
+</body>
+
+
+
