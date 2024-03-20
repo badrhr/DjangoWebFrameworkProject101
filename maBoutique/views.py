@@ -4,7 +4,9 @@ from .form import ArticleForm
 from .models import Article
 
 def home(request):
-    return HttpResponse('<html><body><p>Bienvenue !</P></body></html>')
+    return render(request, "index.html")
+    #return render(request, "accueil.html")
+    #return HttpResponse('<html><body><p>Bienvenue !</P></body></html>')
 
 
 def article_list(request):

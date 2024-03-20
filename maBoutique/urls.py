@@ -19,6 +19,7 @@ from .views import article_list, article_detail, article_delete, home, articleFo
 
 urlpatterns=[
     path('',home),
+    path('index.html',home),
     path('article_list',article_list),
     path('article_detail/<id>/',article_detail),
     path('addArticle',articleForm),
